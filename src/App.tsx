@@ -1,9 +1,10 @@
 import React from "react";
+import BusinessList from "./Components/BusinessList";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <BusinessList />
     </div>
   );
 }

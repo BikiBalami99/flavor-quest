@@ -1,0 +1,30 @@
+import React from "react";
+import Business from "./Business";
+import { RestaurantInterface } from "../Types/Interfaces";
+
+const businessList: RestaurantInterface[] = [
+  {
+    imageSrc:
+      "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
+    name: "MarginOtto Pizzeria",
+    address: "1010 Paddington Way",
+    city: "Flavortown",
+    state: "NY",
+    zipCode: "10101",
+    category: "Italian",
+    rating: 4.5,
+    reviewCount: 90,
+  },
+];
+
+function BusinessList() {
+  return (
+    <div>
+      {businessList.map((currentBusiness: RestaurantInterface, index) => (
+        <Business key={index} aBusiness={currentBusiness} />
+      ))}
+    </div>
+  );
+}
+
+export default BusinessList;
