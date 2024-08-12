@@ -10,7 +10,11 @@ interface BusinessProp {
 const Business = ({ aBusiness }: BusinessProp): JSX.Element => {
   return (
     <li className={styles.eachBusiness}>
-      <img className={styles.businessImg} src={aBusiness.imageSrc} />
+      <img
+        className={styles.businessImg}
+        src={aBusiness.imageSrc}
+        alt="Current Business"
+      />
       <p className={styles.category}>{aBusiness.category}</p>
       <article className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{aBusiness.name}</h2>
