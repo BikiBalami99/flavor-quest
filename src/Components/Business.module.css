@@ -1,0 +1,140 @@
+.eachBusiness a {
+  display: block;
+  text-decoration: none; /* Remove default underline from links */
+  height: 100%; /* Ensure the anchor tag takes the full height */
+}
+
+.eachBusiness {
+  /* Layout and Display */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding: 8rem 0 0;
+
+  /* Sizing */
+  width: 100%;
+  max-width: 35ch;
+  height: fit-content;
+
+  /* Border */
+  border-radius: 0.5rem;
+
+  /* Animation */
+  transition: all 200ms ease;
+  background-color: blueviolet;
+}
+
+.eachBusiness:hover,
+.eachBusiness:focus-within {
+  transform: scale(1.02);
+}
+
+.eachBusiness > *:not(.businessImg) {
+  position: relative;
+  z-index: 1;
+}
+
+.businessImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cardContent {
+  --padding: 1.5em;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+}
+
+.cardTitle {
+  position: relative;
+  width: max-content;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.cardTitle::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  left: calc(var(--padding) * -1);
+  background: rgb(236, 255, 235);
+  width: calc(100% + var(--padding));
+  transform-origin: left;
+  transition: transform 400ms ease-in;
+}
+
+.eachBusiness:hover .cardTitle::after,
+.eachBusiness:focus-within .cardTitle::after {
+  transform: scaleX(1);
+}
+
+.cardBody {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cardInformation {
+  padding: 1rem 0rem 0 0;
+  display: flex;
+  gap: 1rem;
+  font-size: smaller;
+  line-height: 1.3;
+}
+
+.address {
+}
+
+.review {
+}
+
+/* @media (hover: hover) {
+  .cardContent {
+    transform: translateY(60%);
+    transition: transform 500ms ease-out;
+  }
+
+  .eachBusiness:hover .cardContent,
+  .eachBusiness:focus-within .cardContent {
+    transform: translateY(0);
+  }
+
+  .eachBusiness:focus-within .cardContent {
+    transition-duration: 0ms;
+  }
+
+  .cardContent > *:not(.cardTitle) {
+    transition: opacity 300ms linear;
+    opacity: 0;
+  }
+
+  .eachBusiness:hover .cardContent > *:not(.cardTitle),
+  .eachBusiness:focus-within .cardContent > *:not(.cardTitle) {
+    opacity: 1;
+  }
+
+  .cardTitle::after {
+    transform: scaleX(0);
+  }
+} */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
