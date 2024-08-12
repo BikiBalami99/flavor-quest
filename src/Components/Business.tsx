@@ -19,17 +19,15 @@ const Business = ({ aBusiness }: BusinessProp): JSX.Element => {
       <article className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{aBusiness.name}</h2>
         <section className={styles.cardInformation}>
-          <address className={styles.address}>
-            <p>{aBusiness.zipCode}</p>
-            <p>{aBusiness.address}</p>
-            <p>{aBusiness.city}</p>
-            <p>{aBusiness.state}</p>
-          </address>
           <section className={styles.review}>
-            <RatingStars />
-            <p>{aBusiness.rating}</p>
-            <p>{aBusiness.reviewCount}</p>
+            <RatingStars rating={aBusiness.rating} />
+            <p>{"(" + aBusiness.reviewCount + " reviews)"}</p>
           </section>
+          <address className={styles.address}>
+            <p>{aBusiness.address}</p>
+            <p>{aBusiness.city + ", " + aBusiness.state} </p>
+            <p>{"Zipcode:" + aBusiness.zipCode}</p>
+          </address>
         </section>
       </article>
     </li>

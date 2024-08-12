@@ -84,9 +84,11 @@
 }
 
 .cardInformation {
-  padding: 1rem 0rem 0 0;
+  padding-top: 0.2rem;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: start;
   font-size: smaller;
   line-height: 1.3;
 }
@@ -95,6 +97,9 @@
 }
 
 .review {
+  font-size: xx-small;
+  display: flex;
+  align-items: center;
 }
 
 /* @media (hover: hover) {

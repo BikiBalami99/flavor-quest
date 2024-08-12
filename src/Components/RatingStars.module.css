@@ -1,0 +1,40 @@
+.allStars {
+  /* background-color: rgba(255, 255, 255, 0.809); */
+  height: 1.5rem;
+  width: 6.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+/* Define common variables */
+:root {
+  --star-size: 0.8rem;
+  --star-background-size: cover;
+  --star-background-position: center;
+}
+
+/* Base star class with common styles */
+.star {
+  background-size: var(--star-background-size);
+  background-position: var(--star-background-position);
+  height: var(--star-size);
+  width: var(--star-size);
+
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.683));
+}
+
+/* Specific styles for each type of star */
+.goldenStar {
+  background-image: url("../../public/assets/golden-star-icon.png");
+}
+
+.halfGoldenStar {
+  background-image: url("../../public/assets/half-golden-star-icon.png");
+}
+
+.darkStar {
+  background-image: url("../../public/assets/dark-star-icon.png");
+}
