@@ -1,7 +1,7 @@
 import React from "react";
-import { RestaurantInterface } from "../Types/Interfaces";
+import { RestaurantInterface } from "../../Types/Interfaces";
 import styles from "./Business.module.css";
-import RatingStars from "./RatingStars";
+import RatingStars from "../RatingStars/RatingStars";
 
 interface BusinessProp {
   aBusiness: RestaurantInterface;
@@ -10,12 +10,8 @@ interface BusinessProp {
 const Business = ({ aBusiness }: BusinessProp): JSX.Element => {
   return (
     <li className={styles.eachBusiness}>
-      <img
-        className={styles.businessImg}
-        src={aBusiness.imageSrc}
-        alt="Image of the business"
-      />{" "}
-      <p>{aBusiness.category}</p>
+      <img className={styles.businessImg} src={aBusiness.imageSrc} />
+      <p className={styles.category}>{aBusiness.category}</p>
       <article className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{aBusiness.name}</h2>
         <section className={styles.cardInformation}>

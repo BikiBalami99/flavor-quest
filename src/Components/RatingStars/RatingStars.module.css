@@ -28,13 +28,13 @@
 
 /* Specific styles for each type of star */
 .goldenStar {
-  background-image: url("../../public/assets/golden-star-icon.png");
+  background-image: url("../../../public/assets/golden-star-icon.png");
 }
 
 .halfGoldenStar {
-  background-image: url("../../public/assets/half-golden-star-icon.png");
+  background-image: url("../../../public/assets/half-golden-star-icon.png");
 }
 
 .darkStar {
-  background-image: url("../../public/assets/dark-star-icon.png");
+  background-image: url("../../../public/assets/dark-star-icon.png");
 }

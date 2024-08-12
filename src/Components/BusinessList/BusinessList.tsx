@@ -1,6 +1,6 @@
 import React from "react";
-import Business from "./Business";
-import { RestaurantInterface } from "../Types/Interfaces";
+import Business from "../Business/Business";
+import { RestaurantInterface } from "../../Types/Interfaces";
 import styles from "./BusinessList.module.css";
 
 const businessList: RestaurantInterface[] = [
