@@ -1,0 +1,11 @@
+.heroBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: rgb(127, 195, 25);
+  background: url("../../../public/assets/many-food-stock-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px -8px 12px 0px rgba(0, 0, 0, 0.5);
+}
