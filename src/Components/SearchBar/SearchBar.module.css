@@ -5,34 +5,42 @@
 .searchBar {
   display: flex;
   height: fit-content;
-  width: 701px;
-  padding: 32px;
+  width: auto;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 1rem;
   flex-shrink: 0;
 
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.8);
   background: rgba(0, 0, 0, 0.4);
+}
+
+.searchFields {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  flex: 1;
+
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .searchRestaurant,
 .searchLocation {
   display: flex;
-  height: 67px;
-  padding: 0px 32px;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
+  height: 2rem;
+  padding: 0 1rem;
+  flex: 1;
 
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  background: #ffffffe1;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
 
-  color: rgba(23, 23, 23, 0.4);
+  color: rgba(0, 0, 0);
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -41,6 +49,11 @@
 .searchRestaurant::placeholder,
 .searchLocation::placeholder {
   color: rgba(23, 23, 23, 0.4);
+}
+
+.searchRestaurant:focus,
+.searchLocation:focus {
+  outline: 2px solid #0022ff6e;
 }
 
 .searchCriteria {
@@ -71,9 +84,11 @@
   line-height: normal;
 }
 
-.searchCriteria button:hover {
+.searchCriteria button:hover,
+.searchButton:hover {
   cursor: pointer;
   background: #2436ae;
+  color: white;
 }
 
 .searchButton {
@@ -92,7 +107,7 @@
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;

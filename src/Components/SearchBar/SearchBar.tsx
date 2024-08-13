@@ -8,23 +8,25 @@ function SearchBar() {
       role="search"
       aria-labelledby="search-bar-heading"
     >
-      <input
-        className={styles.searchRestaurant}
-        id="search-restaurants"
-        name="search-restaurants"
-        type="text"
-        placeholder="Enter restaurant name"
-        aria-required="true"
-      />
+      <div className={styles.searchFields}>
+        <input
+          className={styles.searchRestaurant}
+          id="search-restaurants"
+          name="search-restaurants"
+          type="text"
+          placeholder="Restaurant name"
+          aria-required="true"
+        />
 
-      <input
-        className={styles.searchLocation}
-        id="selected-location"
-        name="selected-location"
-        type="text"
-        placeholder="Enter location"
-        aria-required="true"
-      />
+        <input
+          className={styles.searchLocation}
+          id="selected-location"
+          name="selected-location"
+          type="text"
+          placeholder="Location"
+          aria-required="true"
+        />
+      </div>
 
       <fieldset className={styles.searchCriteria}>
         <legend hidden>Search by criteria</legend>

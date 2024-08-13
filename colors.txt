@@ -1,0 +1,8 @@
+1. **Focus Outline**: `#0048ff6e` (semi-transparent blue)
+2. **Input Background**: `#ffffffe1` (light off-white)
+3. **Button Background (Search Criteria)**: `#454545` (dark gray)
+4. **Button Hover (Search Criteria)**: `#2436ae` (dark blue)
+5. **Search Button Background**: `#fffb00` (bright yellow)
+6. **Search Button Text Color**: `#101010` (dark gray)
+7. **Search Button Text Shadow**: `rgba(0, 0, 0, 0.1)` (light shadow)
+8. **Placeholder Text**: `rgba(23, 23, 23, 0.4)` (light gray)
