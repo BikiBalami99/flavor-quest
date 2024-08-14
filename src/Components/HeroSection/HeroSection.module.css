@@ -18,3 +18,9 @@
     height: 40vh;
   }
 }
+
+@media (max-width: 560px) {
+  .heroBackground {
+    padding: 0px;
+  }
+}

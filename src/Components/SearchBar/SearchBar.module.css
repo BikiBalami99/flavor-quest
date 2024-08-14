@@ -1,5 +1,3 @@
-
-
 /* Global Styles */
 * {
   border: 0px;
@@ -28,6 +26,13 @@
 
   justify-content: space-between;
   align-items: stretch;
+}
+
+.searchFields label {
+  width: 100%;
+  text-align: center;
+  font-size: x-small;
+  color: var(--dark);
 }
 
 .searchRestaurant,
@@ -64,6 +69,15 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+}
+
+.searchCriteria legend {
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  font-size: x-small;
+  color: var(--dark);
+  padding-bottom: 0.3rem;
 }
 
 .searchCriteria button {
@@ -139,6 +153,41 @@
   }
 }
 
-@media (mid-wdith: 1200px){
+@media (max-width: 560px) {
+  .searchBar {
+    font-size: x-small;
+    width: 300px;
+    padding: 0.8rem;
+    gap: 0.3rem;
+    margin: 2rem;
+  }
 
+  .searchBar h2 {
+    font-size: medium;
+  }
+
+  .searchFields {
+    gap: 0.6rem;
+  }
+
+  .searchRestaurant,
+  .searchLocation {
+    font-size: x-small;
+    padding: 0.3rem 1rem;
+  }
+
+  .searchCriteria {
+  }
+
+  .searchCriteria button {
+    font-size: xx-small;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .searchButton {
+    /* Styles for searchButton on smaller screens */
+    font-size: x-small;
+    margin-top: 0.4rem;
+  }
 }

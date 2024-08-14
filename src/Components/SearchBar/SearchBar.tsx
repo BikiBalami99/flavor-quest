@@ -10,6 +10,7 @@ function SearchBar() {
     >
       <h2>Discover your cravings!</h2>
       <div className={styles.searchFields}>
+        <label htmlFor="searchFields">Find by name or location</label>
         <input
           className={styles.searchRestaurant}
           id="search-restaurants"
@@ -30,10 +31,10 @@ function SearchBar() {
       </div>
 
       <fieldset className={styles.searchCriteria}>
-        <legend hidden>Search by criteria</legend>
+        <legend>Sort by</legend>
         <button type="button">Best Match</button>
-        <button type="button">Highest Rated</button>
-        <button type="button">Most Reviewed</button>
+        <button type="button">Popular</button>
+        <button type="button">Ratings</button>
       </fieldset>
       <button className={styles.searchButton} type="submit">
         Search
