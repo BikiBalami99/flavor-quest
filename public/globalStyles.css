@@ -8,6 +8,28 @@
 }
 */
 
+:root {
+  /* Primary Colors */
+  --primary: #379777;
+  --primary-dark: #2e6d5e; /* Darker shade of primary */
+  --primary-light: #7ab8ab; /* Lighter shade of primary */
+
+  /* Secondary Colors */
+  --secondary: #f4ce14;
+  --secondary-dark: #d4a10e; /* Darker shade of secondary */
+  --secondary-light: #f9e547; /* Lighter shade of secondary */
+
+  /* Dark Colors */
+  --dark-darker: rgb(25, 25, 25);
+  --dark: #3f4043;
+  --dark-light: #6c6f72; /* Lighter shade of dark */
+
+  /* Light Colors */
+  --light-lighter: white;
+  --light: #f5f7f8;
+  --light-dark: #e1e3e5; /* Darker shade of light */
+}
+
 /* Global CSS Reset */
 * {
   margin: 0;
@@ -19,6 +41,7 @@ html,
 body {
   height: 100%;
   font-family: "Poppins", sans-serif; /* Set a consistent font-family across the application */
+  background-color: var(--light);
 }
 
 /* Additional Global Styles */

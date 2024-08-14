@@ -8,6 +8,7 @@ function SearchBar() {
       role="search"
       aria-labelledby="search-bar-heading"
     >
+      <h2>Discover your cravings!</h2>
       <div className={styles.searchFields}>
         <input
           className={styles.searchRestaurant}
