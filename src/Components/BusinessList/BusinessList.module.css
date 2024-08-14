@@ -1,13 +1,12 @@
 .businessList {
   /* Layout and Display */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.2rem;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  gap: 1rem;
+  justify-content: center;
 
   /* Sizing */
   width: 100%;
-  padding: 2rem;
-  max-width: 1740px;
+  padding: 3rem 15%;
   margin: auto;
 }

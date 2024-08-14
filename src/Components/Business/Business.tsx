@@ -5,13 +5,17 @@ import RatingStars from "../RatingStars/RatingStars";
 
 interface BusinessProp {
   aBusiness: RestaurantInterface;
+  businessWebsite: string;
 }
 
-const Business = ({ aBusiness }: BusinessProp): JSX.Element => {
+const Business = ({
+  aBusiness,
+  businessWebsite,
+}: BusinessProp): JSX.Element => {
   return (
     <li className={styles.eachBusiness}>
       {/* Link to the website */}
-      <a className={styles.link} href="#">
+      <a className={styles.link} href={businessWebsite}>
         {/* Background Image */}
         <img
           className={styles.businessImg}
