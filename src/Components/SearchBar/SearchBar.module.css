@@ -7,14 +7,16 @@
   display: flex;
   height: fit-content;
   width: 550px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   flex-shrink: 0;
+  position: absolute;
 
   border-radius: 1rem;
   background: var(--light);
+  background: linear-gradient(var(--light), var(--light-dark));
 }
 
 .searchFields {
@@ -153,6 +155,42 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .searchBar {
+    font-size: small;
+    width: 450px;
+    padding: 1.5rem;
+    gap: 0.3rem;
+    top: 15vh;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
+  }
+
+  .searchBar h2 {
+    font-size: medium;
+  }
+
+  .searchFields {
+    gap: 0.6rem;
+  }
+
+  .searchRestaurant,
+  .searchLocation {
+    font-size: x-small;
+    padding: 0.3rem 1rem;
+  }
+
+  .searchCriteria button {
+    font-size: xx-small;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .searchButton {
+    /* Styles for searchButton on smaller screens */
+    font-size: x-small;
+    margin-top: 0.4rem;
+  }
+}
 @media (max-width: 560px) {
   .searchBar {
     font-size: x-small;
@@ -174,9 +212,6 @@
   .searchLocation {
     font-size: x-small;
     padding: 0.3rem 1rem;
-  }
-
-  .searchCriteria {
   }
 
   .searchCriteria button {

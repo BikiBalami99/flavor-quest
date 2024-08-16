@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 700px;
   background-color: rgb(127, 195, 25);
   background: url("../../../public/assets/avocado-sandwich.jpeg");
   background-size: cover;
@@ -15,10 +16,23 @@
 
 @media (min-width: 2000px) {
   .heroBackground {
-    height: 40vh;
   }
 }
 
+@media (max-width: 2000px) {
+  .heroBackground {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .heroBackground {
+    height: 400px;
+    padding: 0;
+    position: relative;
+    margin-bottom: 10vh;
+  }
+}
 @media (max-width: 560px) {
   .heroBackground {
     padding: 0px;
